@@ -12,7 +12,7 @@ fn main(){
 	let acer_q = 1.0;
     
     let total_q = toshiba_q + mac_q + hp_q + dell_q + acer_q;
-	let sum = toshiba_a + mac_a + hp_a + dell_a + acer_a;
+	let sum = (toshiba_a * toshiba_q) + (mac_a * mac_q) + (hp_a * hp_q) + (dell_a * dell_q) + (acer_a * acer_q);
 	let average = sum / total_q;
 
 	println!("The sum of the sales record is {}", sum);
