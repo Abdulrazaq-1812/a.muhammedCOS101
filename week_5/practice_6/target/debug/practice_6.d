@@ -1,0 +1,1 @@
+C:\Users\New\OneDrive\ -\ Pan-Atlantic\ University\Documents\MR.\ CHIDI'S\ FILE\a.muhammedCOS101\week_5\practice_6\target\debug\practice_6.exe: C:\Users\New\OneDrive\ -\ Pan-Atlantic\ University\Documents\MR.\ CHIDI'S\ FILE\a.muhammedCOS101\week_5\practice_6\src\main.rs
