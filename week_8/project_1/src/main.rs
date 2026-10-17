@@ -60,35 +60,37 @@ fn main() {
 
         let mut input1 = String::new();
         io::stdin().read_line(&mut input1).expect("Invalid input");
-        let selected_service = input1.trim().to_string();
+        let selected_service = input1.trim();
 
-            match selected_service.as_str() {
-                "Office Admin" => {
+            if public_services.eq_ignore_ascii_case(&selected_service){
+                match selected_service.as_str() {
+                    "Office Admin" => {
 
-                    let (cs_position, a_level) = choose_position(&office_ad_positions);
-                    break (selected_service, cs_position, a_level);
-                }
+                        let (cs_position, a_level) = choose_position(&office_ad_positions);
+                        break (selected_service, cs_position, a_level);
+                    }
 
-                 "Academic" => {
+                     "Academic" => {
 
-                    let (cs_position, a_level) = choose_position(&academic_positions);
-                    break (selected_service, cs_position, a_level);
-                }
+                        let (cs_position, a_level) = choose_position(&academic_positions);
+                        break (selected_service, cs_position, a_level);
+                    }
 
-                 "Lawyer" => {
+                     "Lawyer" => {
 
-                    let (cs_position, a_level) = choose_position(&lawyer_positions);
-                    break (selected_service, cs_position, a_level);
-                }
+                        let (cs_position, a_level) = choose_position(&lawyer_positions);
+                        break (selected_service, cs_position, a_level);
+                    }
 
-                 "Teacher" => {
+                     "Teacher" => {
 
-                    let (cs_position, a_level) = choose_position(&teacher_positions);
-                    break (selected_service, cs_position, a_level);
-                }
-                _ => {
-                    println!("Invalid position entry. Try again");
-                    continue;
+                        let (cs_position, a_level) = choose_position(&teacher_positions);
+                        break (selected_service, cs_position, a_level);
+                    }
+                    _ => {
+                        println!("Invalid position entry. Try again");
+                        continue;
+                    }
                 }
             }
 
