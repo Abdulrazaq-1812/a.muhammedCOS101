@@ -21,7 +21,7 @@ fn main() {
         if input.trim().eq_ignore_ascii_case("no") {
             break;
         } else if input.trim().eq_ignore_ascii_case("yes") {
-            println!("Please enter your full name:");
+            println!("Please enter the full name of the intervewee: ");
 
             let mut input1 = String::new();
             io::stdin()
@@ -30,7 +30,7 @@ fn main() {
 
             let name = input1.trim().to_string();
 
-            println!("Please enter your years of programming experience:");
+            println!("Please enter the years of programming experience:");
 
             let mut input2 = String::new();
             io::stdin()
