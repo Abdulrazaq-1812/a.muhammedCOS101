@@ -20,7 +20,7 @@ fn main() {
     let mut file = std::fs::File::create("Breweries_brands.csv").expect("Failed to create a file");
 
     for brand in &breweries_brands {
-        writeln!(file, "{}, {}, {} \n", brand[0], brand[1], brand[2]).unwrap();
+        writeln!(file, "{}, {}, {}", brand[0], brand[1], brand[2]).unwrap();
     }
 
 
