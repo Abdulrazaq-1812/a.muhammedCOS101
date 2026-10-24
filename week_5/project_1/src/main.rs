@@ -23,19 +23,52 @@ fn main() {
         let mut input1 = String::new();
         io::stdin().read_line(&mut input1).expect("Invalid ID");
 
-        let food_id = input1.trim();
+        let food_id = input1.trim().to_uppercase();
 
         match food_id {
             "F" => break (" Fried Rice & Chicken", 3000.00),
-            "P" => break ("Poundo Yam / Edinkaiko Soup", 3200.00),
+            "P" => break ("Poundo Yam & Edinkaiko Soup", 3200.00),
             "A" => break ("Amala & Ewedu Soup", 2500.00),
             "E" => break ("Eba & Egusi Soup", 2000.00),
             "W" => break ("White Rice & Stew", 2500.00),
+            "Q" => {
+                println!("Thank for choosing PAU Cafeteria, we look forward to having you again!");
+                std::process::exit(0);
+            }
             _ => {
                 println!("Invalid food ID.");
                 continue;
             }  
         }
+
+
+
+        /* OR 
+
+         match food_id {
+            "F" => break Some((" Fried Rice & Chicken", 3000.00)),
+            "P" => break ("Poundo Yam / Edinkaiko Soup", 3200.00),
+            "A" => break ("Amala & Ewedu Soup", 2500.00),
+            "E" => break ("Eba & Egusi Soup", 2000.00),
+            "W" => break ("White Rice & Stew", 2500.00),
+            "Q" => None,
+
+            _ => {
+                println!("Invalid food ID.");
+                continue;
+            }  
+        }
+
+        match (purchase, price) {
+            Some(purchase, price) => {
+                println!("......")
+            }
+
+            None => {
+                println!(".....")
+            }
+        }
+        */
     };
 
 
@@ -60,6 +93,6 @@ fn main() {
 
     if total > 10_000.00 {
         total = total * 0.95;
-        println!("The cost of your purchase is {}", total);
+        println!("The cost of your purchase is N{}", total);
     } 
 }

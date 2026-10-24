@@ -14,7 +14,7 @@ fn main() {
         match input1.trim() {
             "Experienced" => break "Experienced".to_string(),
             "Not experienced" => break "Not experienced".to_string(),
-            _ => continue
+            _ => continue,
         }
     };
 

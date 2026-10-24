@@ -7,7 +7,9 @@ fn main()
 
     println!("Enter your name: ");
     io::stdin().read_line(&mut input1).expect("Invalid String");
-
+    let name = input1.trim().expect("Invalid input");
+    println!("Your name is {}", name);
+    
     println!("Enter your age: ");
     io::stdin().read_line(&mut input2).expect("Invalid String");
     let age:u8 = input2.trim().parse().expect("Invalid number");

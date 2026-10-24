@@ -2,10 +2,8 @@ use std::io;
 
 fn main() {
     println!(
-        "
-        Hey, there!
-        Welcome to today's interview
-        "
+        "Hey, there!
+        Welcome to today's interview"
     );
 
     let mut interviewee_info: Vec<(String, u8)> = Vec::new();
