@@ -19,10 +19,10 @@ fn main() {
 }
 
 fn convicted_ministers_header() -> (Vec<[&'static str ; 3]>, Vec<[&'static str ; 3]>) {
-    let header: Vec<[&str; 3]> = vec![
+    let header: Vec<[&'static str; 3]> = vec![
         ["Commissioner", "Ministry", "Zone"]
     ];
-    let commissioners_detail: Vec<[&str; 3]> = vec![
+    let commissioners_detail: Vec<[&'static str; 3]> = vec![
 
         ["Aigbogun Alamba Dauda", "Internal Affairs", "South West"],
         ["Murtala Afeez Bendu", "Justice", "North East"],
