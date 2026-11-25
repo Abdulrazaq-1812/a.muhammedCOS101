@@ -29,3 +29,8 @@ Desktop.ini
 
 # Rust extras
 *.rs.bk
+
+*.bin
+*.db
+*.sqlite
+*.sqlite3
