@@ -10,5 +10,5 @@ fn main() {
 fn print(x:(i32, bool, f64)) {
 
     println!("Inside print method");
-    println!("{:?}", b);
+    println!("{:?}", x);
 }

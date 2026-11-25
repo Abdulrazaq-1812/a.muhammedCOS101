@@ -21,5 +21,5 @@ fn main() {
     println!("A is equal to B: {}", res);
 
     res = a != b;
-    println!("A is not equal to B {}", res);
+    println!("A is not equal to B: {}", res);
 }

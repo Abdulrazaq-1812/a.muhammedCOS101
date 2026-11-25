@@ -64,7 +64,7 @@ fn main() {
                 );
             }
         } else {
-            println!("Please enter yes or no.");
+            continue;
         }
     }
 

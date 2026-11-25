@@ -1,0 +1,31 @@
+# Rust build artifacts
+target/
+**/target/
+
+# Executables and debug symbols
+*.exe
+*.pdb
+
+# Rust compiler metadata
+.rustc_info.json
+CACHEDIR.TAG
+
+# IDE folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# Secrets and OS junk
+.env
+.DS_Store
+
+# Rust extras
+*.rs.bk
